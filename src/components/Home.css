@@ -1,0 +1,52 @@
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/nathan-anderson-L-7cP4p5hik-unsplash.jpg");
+  background-size: cover;
+  background-position: 0% 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home__banner {
+  opacity: 0.95;
+  color: #fafafa;
+  text-align: center;
+}
+.home__banner > h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 5.2rem;
+  margin-bottom: 0.2em;
+  letter-spacing: 2px;
+}
+.home__banner > h3:first-of-type {
+  font-size: 1.8rem;
+}
+.home__banner > h3 {
+  margin: 0.8em 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+h3 > span {
+  color: white;
+}
+.home__arrow {
+  position: absolute;
+  bottom: 0;
+  flex: 1;
+  padding: 1.5em 4em;
+}
+.home__arrow > a {
+  text-decoration: none;
+}
+.home__arrow svg {
+  font-size: 3.5rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.home__arrow svg:hover {
+  color: #87f5fb;
+}

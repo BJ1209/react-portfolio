@@ -1,0 +1,29 @@
+.about {
+  height: 65vh;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: flex-start;
+}
+.about__image > img {
+  object-fit: contain;
+  height: 9em;
+  border-radius: 50%;
+}
+.about__info {
+  margin-left: 7em;
+}
+.about__infotop {
+  margin-bottom: 2em;
+}
+.about__infotop > h1,
+.about__infobottom > h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+}
+.about__infotop > p,
+.about__infobottom p {
+  color: #7a7a7a;
+  font-size: 1.1rem;
+  margin: 0.4em 0;
+}

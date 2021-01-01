@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #111;
+}
+.nav__btn {
+  position: fixed !important;
+  top: 10px;
+  left: 10px;
+  z-index: 10000 !important;
+}
+svg.nav__hamburgerIcon {
+  color: #fafafa !important;
+  font-size: 2.2rem !important;
+}
+.nav__logo {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav__logo > a {
+  font-size: 5.5rem;
+  text-decoration: none;
+  color: #fafafa;
+  font-family: "Euphoria Script", cursive;
+}
+.nav__links {
+  width: 15em;
+  list-style: none;
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav__lista {
+  display: flex;
+  align-items: center;
+}
+.nav__links > li > .active {
+  border-bottom: 2px solid #fafafa;
+}
+.nav__links a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fafafa;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.nav__links a:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.nav__social {
+  list-style: none;
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav__social > li {
+  margin: 0.4em 0;
+}
+.nav__social a svg {
+  opacity: 0.8;
+  transition: 0.25s all ease-in-out;
+}
+.nav__social a:hover svg {
+  opacity: 1;
+  transform: scale(1.1) !important;
+}
+.nav__title {
+  margin-left: 0.5em;
+}
+svg.nav__icon {
+  font-size: 1.8rem;
+  color: #fafafa;
+}

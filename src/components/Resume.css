@@ -1,0 +1,87 @@
+.resume {
+  background-color: #fff;
+}
+.resume__education {
+  display: flex;
+}
+.resume__education > h3,
+.resume__skills > h3 {
+  font-size: 1.5rem;
+  margin: 0 5.8em 0 0.2em;
+  border-bottom: 4px solid #ed254e;
+  align-self: flex-start;
+  padding-bottom: 0.2em;
+  letter-spacing: 1px;
+}
+.resume__education > div h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2em;
+}
+.resume__education > div p {
+  color: #777881;
+  letter-spacing: 1px;
+  margin: 0.5em 0;
+}
+.resume__education > div > div:first-of-type {
+  margin-top: 0;
+}
+.resume__education > div > div {
+  margin: 1.5em 0;
+}
+.resume__education > div p > span {
+  font-style: italic;
+}
+.resume > hr {
+  height: 2px;
+  border: 0;
+  width: 95%;
+  margin: 1.5em 0 2.5em 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+.resume__skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+.resume__skills > h3 {
+  margin: 0 7.8em 0 0.2em;
+}
+.resume__skills > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume__skills > div > div {
+  width: 10em;
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  margin: 0.6em;
+  border-radius: 15px;
+  border: 2px solid #606060;
+
+  transition: all 0.2s ease-in-out;
+}
+.resume__skills > div > div:hover,
+.resume__skills > div > div:hover > svg {
+  color: #ed254e;
+}
+.resume__skills > div > div:hover {
+  border: 2px solid #ed254e;
+}
+.resume__skills > div > div > svg {
+  color: #606060;
+  font-size: 3.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.resume__skills > div > div > p {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+  letter-spacing: 1px;
+}
