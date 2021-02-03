@@ -2,17 +2,19 @@ import React from 'react';
 import * as DevIcons from 'react-icons/di';
 import * as FAIcons from 'react-icons/fa';
 import { SiFirebase } from 'react-icons/si';
-import NetflixClone from './images/projects/Netflix-clone.png';
-import YoutubeClone from './images/projects/youtube-clone.png';
+
+import Amazon from './images/projects/Amazon.jpg';
+import Spotify from './images/projects/Spotify-Clone.gif';
 import COVID19Tracker from './images/projects/Covid-19-tracker.png';
-import SlackClone from './images/projects/slack_clone.jpg';
+import Whatsapp from './images/projects/whatsapp__home.jpg';
+import Telegram from './images/projects/Home.jpg';
 import profilepic from './images/profilePic.jpg';
 
 const resumeData = {
   main: {
     name: 'Bikram Jeet Singh',
     occupation: 'ReactJS Developer',
-    description: 'ReactJS Developer with Firebase',
+    description: '#ReactJSDeveloper #Firebase',
     bio: "My Name is Bikram. I'm a Front-End ReactJS Developer.",
     contactmessage: 'Get in contact with me to receive further details',
     email: 'sbikram99975@gmail.com',
@@ -38,7 +40,7 @@ const resumeData = {
       },
       {
         name: 'github',
-        url: 'https://github.com/Bikram1209',
+        url: 'https://github.com/BJ1209',
         icon: <FAIcons.FaGithub className="nav__icon" />,
       },
     ],
@@ -102,24 +104,33 @@ const resumeData = {
   portfolio: {
     projects: [
       {
-        title: 'Slack Clone',
-        imageUrl: SlackClone,
-        url: 'https://slack-clone-bjs.web.app/',
+        title: 'Amazon Clone - ReactJs, Hooks, Firebase',
+        imageUrl: Amazon,
+        link: 'https://clone-bjs-b7e81.web.app/',
+        repo: 'https://github.com/BJ1209/Amazon-Web-Clone',
       },
       {
-        title: 'Netflix Web Clone',
-        imageUrl: NetflixClone,
-        url: 'https://netflix-clone-bjs.web.app/',
+        title: 'Spotify Web Clone - ReactJs, Hooks, Spotify-Web-API',
+        imageUrl: Spotify,
+        repo: 'https://github.com/BJ1209/Spotify-Clone-react',
+        link: 'https://spotify-clone-bjs.web.app/',
       },
       {
-        title: 'COVID-19 Tracker',
+        title: 'COVID-19 Tracker - ReactJs, Hooks, API',
         imageUrl: COVID19Tracker,
-        url: 'https://covid-19-tracker-b.web.app/',
+        link: 'https://covid-19-tracker-b.web.app/',
       },
       {
-        title: 'Youtube Clone',
-        imageUrl: YoutubeClone,
-        url: 'https://clone-bjs.web.app/',
+        title: 'Telegram Clone - ReactJs, Hooks, real-time-messaging',
+        imageUrl: Telegram,
+        link: 'https://telegram-clone-bjs.web.app/',
+        repo: 'https://github.com/BJ1209/Telegram-clone',
+      },
+      {
+        title: "Whatsapp Clone - ReactJs, Hooks,real-time-messaging, Emoji's and much more",
+        imageUrl: Whatsapp,
+        link: 'https://whatsapp-web-clone-bjs.web.app/',
+        repo: 'https://github.com/BJ1209/WhatsApp-Web-Clone',
       },
     ],
   },

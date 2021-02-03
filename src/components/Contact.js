@@ -1,19 +1,22 @@
-import React from "react";
-import { useState } from "react";
-import "./Contact.css";
+import React from 'react';
+import { useState } from 'react';
+import './Contact.css';
 
-function Contact({ data }) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
   const clickHandler = (e) => {
     e.preventDefault();
-
-    if (email.trim() !== "" || message.trim() !== "") {
-      window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+    if (email.trim() !== '' || message.trim() !== '') {
+      window.open(
+        `mailto:${`me.bikram.dev@gmail.com`}?subject=${subject}&body=${name}: ${message}`
+      );
     }
   };
+
   return (
     <section id="contact" className="contact">
       <h1>Contact Me</h1>
@@ -49,7 +52,7 @@ function Contact({ data }) {
           rows="12"
           required
         ></textarea>
-        <button type="submit" onClick={clickHandler}>
+        <button disabled={!email || !message} type="submit" onClick={clickHandler}>
           Send
         </button>
       </form>

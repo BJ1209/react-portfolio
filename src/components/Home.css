@@ -1,7 +1,7 @@
-header {
+.home {
   height: 100vh;
   width: 100%;
-  background-image: url("../images/nathan-anderson-L-7cP4p5hik-unsplash.jpg");
+  background-image: url('../images/safar-safarov-LKsHwgzyk7c-unsplash.jpg');
   background-size: cover;
   background-position: 0% 40%;
   display: flex;
@@ -9,14 +9,24 @@ header {
   align-items: center;
   position: relative;
 }
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
 .home__banner {
-  opacity: 0.95;
-  color: #fafafa;
+  color: #fff;
   text-align: center;
+  z-index: 3;
 }
 .home__banner > h1 {
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 5.2rem;
   margin-bottom: 0.2em;
   letter-spacing: 2px;
@@ -27,7 +37,7 @@ header {
 .home__banner > h3 {
   margin: 0.8em 0;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 h3 > span {
@@ -36,8 +46,10 @@ h3 > span {
 .home__arrow {
   position: absolute;
   bottom: 0;
+  right: 0;
   flex: 1;
   padding: 1.5em 4em;
+  z-index: 3;
 }
 .home__arrow > a {
   text-decoration: none;
