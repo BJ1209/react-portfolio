@@ -1,0 +1,65 @@
+@import "./base";
+.about {
+  padding: $padding;
+  height: 65vh;
+  background-color: $clr-about-bg;
+  display: flex;
+  justify-content: flex-start;
+  height: fit-content;
+  @include mq($bp-992, $bp-1200) {
+    padding: $padding-992-1200;
+  }
+  @include mq($bp-768, $bp-992) {
+    padding: $padding-768-992;
+  }
+  @include mq($bp-600, $bp-768) {
+    padding: $padding-600-768;
+  }
+  @include mq($bp-0, $bp-600) {
+    padding: $padding-0-600;
+  }
+
+  .about__image {
+    height: fit-content;
+    & > img {
+      object-fit: contain;
+      height: 9em;
+      border-radius: 50%;
+      @include mq($bp-600, $bp-768) {
+        height: 10em;
+      }
+      @include mq($bp-0, $bp-600) {
+        height: 10em;
+      }
+    }
+  }
+
+  .about__info {
+    margin-left: 7em;
+    height: fit-content;
+    @include mq($bp-425, $bp-768) {
+      margin-left: 5em;
+    }
+    @include mq($bp-0, $bp-425) {
+      margin-left: 4em;
+    }
+    .about__infotop {
+      margin-bottom: 2em;
+    }
+    .about__infotop > h1,
+    .about__infobottom > h2 {
+      color: $clr-text;
+      font-size: 2rem;
+      margin-bottom: 0.2em;
+      @include mq($bp-768, $bp-992) {
+        font-size: 1.8rem;
+      }
+    }
+    .about__infotop > p,
+    .about__infobottom p {
+      color: $clr-about-sec;
+      font-size: 1.1rem;
+      margin: 0.4em 0;
+    }
+  }
+}

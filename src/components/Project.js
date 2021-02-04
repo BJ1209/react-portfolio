@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitHub, Link } from '@material-ui/icons';
-import './Project.css';
+import './../styles/Project.scss';
 const Project = ({ project }) => {
   const { title, imageUrl, link, repo } = project;
   return (
@@ -9,11 +9,13 @@ const Project = ({ project }) => {
       <div className="project__info">
         <h3 className="project__title">{title}</h3>
         <div className="project__links">
-          <a href={repo}>
-            <GitHub />
-            <span>github</span>
-          </a>
-          <a href={link}>
+          {repo && (
+            <a href={repo} target="_blank">
+              <GitHub />
+              <span>github</span>
+            </a>
+          )}
+          <a href={link} target="_blank">
             <Link />
             <span>link</span>
           </a>

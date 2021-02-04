@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project';
-import './Projects.css';
+import './../styles/Projects.scss';
 
 function Projects({ data }) {
   return (
@@ -11,6 +11,9 @@ function Projects({ data }) {
           <Project key={index} project={project} />
         ))}
       </div>
+      <a href="https://github.com/BJ1209?tab=repositories" target="_blank">
+        Check All Repositories
+      </a>
     </section>
   );
 }

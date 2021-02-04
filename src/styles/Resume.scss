@@ -1,5 +1,19 @@
+@import "./base";
 .resume {
-  background-color: #fff;
+  background-color: $clr-text;
+  padding: $padding;
+  @include mq($bp-992, $bp-1200) {
+    padding: $padding-992-1200;
+  }
+  @include mq($bp-768, $bp-992) {
+    padding: $padding-768-992;
+  }
+  @include mq($bp-600, $bp-768) {
+    padding: $padding-600-768;
+  }
+  @include mq($bp-0, $bp-600) {
+    padding: $padding-0-600;
+  }
 }
 .resume__education {
   display: flex;
@@ -7,18 +21,24 @@
 .resume__education > h3,
 .resume__skills > h3 {
   font-size: 1.5rem;
-  margin: 0 5.8em 0 0.2em;
-  border-bottom: 4px solid #ed254e;
+  border-bottom: 4px solid $clr-resume-pink;
   align-self: flex-start;
   padding-bottom: 0.2em;
   letter-spacing: 1px;
+  margin-right: 6em;
+  @include mq($bp-425, $bp-768) {
+    margin-right: 5em;
+  }
+  @include mq($bp-0, $bp-425) {
+    margin-right: 4em;
+  }
 }
 .resume__education > div h3 {
   font-size: 1.3rem;
   margin-bottom: 0.2em;
 }
 .resume__education > div p {
-  color: #777881;
+  color: $clr-about-sec;
   letter-spacing: 1px;
   margin: 0.5em 0;
 }
@@ -36,19 +56,20 @@
   border: 0;
   width: 95%;
   margin: 1.5em 0 2.5em 0;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 .resume__skills {
   display: flex;
   justify-content: space-evenly;
 }
 .resume__skills > h3 {
-  margin: 0 7.8em 0 0.2em;
+  margin-right: 8em;
+  @include mq($bp-0, $bp-768) {
+    margin-right: 7em;
+  }
+  @include mq($bp-0, $bp-425) {
+    margin-right: 6em;
+  }
 }
 .resume__skills > div {
   display: flex;
@@ -57,26 +78,27 @@
 .resume__skills > div > div {
   width: 10em;
   height: 8em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fafafa;
+  @include flexColumnCenter;
+  background-color: $clr-skill-bg;
   margin: 0.6em;
   border-radius: 15px;
-  border: 2px solid #606060;
-
+  border: 2px solid;
+  border-color: $clr-skill;
   transition: all 0.2s ease-in-out;
+  @include mq($bp-0, $bp-425) {
+    width: 8em;
+    height: 8em;
+  }
 }
 .resume__skills > div > div:hover,
 .resume__skills > div > div:hover > svg {
-  color: #ed254e;
+  color: $clr-resume-pink;
 }
 .resume__skills > div > div:hover {
-  border: 2px solid #ed254e;
+  border-color: $clr-resume-pink;
 }
 .resume__skills > div > div > svg {
-  color: #606060;
+  color: $clr-skill;
   font-size: 3.5rem;
   transition: all 0.2s ease-in-out;
 }
@@ -84,4 +106,7 @@
   font-size: 1.2rem;
   margin-top: 0.5em;
   letter-spacing: 1px;
+  @include mq($bp-0, $bp-425) {
+    font-size: 1.1rem;
+  }
 }

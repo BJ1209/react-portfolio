@@ -1,5 +1,5 @@
-import React from "react";
-import "./About.css";
+import React from 'react';
+import './../styles/About.scss';
 
 function About({ data }) {
   const main = data?.main;

@@ -1,0 +1,52 @@
+$clr-blue: #87f5fb;
+
+// Home styles
+$clr-text: #fff;
+
+// About styles
+$clr-about-bg: #2b2b2b;
+$clr-about-sec: #7a7a7a;
+
+// Resume styles
+$clr-resume-pink: #ed254e;
+$clr-skill-bg: #fafafa;
+$clr-skill: #606060;
+
+// Projects styles
+$clr-projects-bg: #ebeeee;
+
+// Contact styles
+$clr-contact-bg: #191919;
+$clr-contact-blue: #08fdd8;
+$clr-form-border: #666666;
+
+// breakpoints
+$bp-1440: 1440px;
+$bp-1200: 1200px;
+$bp-992: 992px;
+$bp-768: 768px;
+$bp-600: 600px;
+$bp-425: 425px;
+$bp-0: 0px;
+
+$padding: 5em 15em;
+$padding-992-1200: 4em 8em;
+$padding-768-992: 4em;
+$padding-600-768: 3em;
+$padding-0-600: 3em 2em;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexColumnCenter {
+  @include flexCenter;
+  flex-direction: column;
+}
+
+@mixin mq($minw, $maxw) {
+  @media screen and (min-width: $minw) and (max-width: $maxw) {
+    @content;
+  }
+}

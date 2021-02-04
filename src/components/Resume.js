@@ -1,5 +1,5 @@
-import React from "react";
-import "./Resume.css";
+import React from 'react';
+import './../styles/Resume.scss';
 
 function Resume({ data }) {
   return (

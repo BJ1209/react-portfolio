@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import { Drawer, IconButton } from "@material-ui/core";
-import { Menu, Home, Person, Code, MailOutline } from "@material-ui/icons";
-import { Link } from "react-scroll";
-import "./Navbar.css";
+import React, { useState } from 'react';
+import { Drawer, IconButton } from '@material-ui/core';
+import { Menu, Home, Person, Code, MailOutline } from '@material-ui/icons';
+import { Link } from 'react-scroll';
+import './../styles/Navbar.scss';
 
 function Navbar({ data }) {
   const [open, setOpen] = useState(false);
   const list = [
-    { ref: "home", title: "Home", icon: <Home className="nav__icon" />, dataText: "home" },
-    { ref: "about", title: "About", icon: <Person className="nav__icon" /> },
-    { ref: "resume", title: "Resume", icon: <Home className="nav__icon" /> },
+    { ref: 'home', title: 'Home', icon: <Home className="nav__icon" />, dataText: 'home' },
+    { ref: 'about', title: 'About', icon: <Person className="nav__icon" /> },
+    { ref: 'resume', title: 'Resume', icon: <Home className="nav__icon" /> },
     {
-      ref: "projects",
-      title: "Projects",
+      ref: 'projects',
+      title: 'Projects',
       icon: <Code className="nav__icon" />,
     },
     {
-      ref: "contact",
-      title: "Contact",
+      ref: 'contact',
+      title: 'Contact',
       icon: <MailOutline className="nav__icon" />,
     },
   ];
@@ -48,7 +48,7 @@ function Navbar({ data }) {
                     spy={true}
                     className="nav__lista"
                   >
-                    <span className="nav__icon">{item.icon}</span>{" "}
+                    <span className="nav__icon">{item.icon}</span>{' '}
                     <span className="nav__title">{item.title}</span>
                   </Link>
                 </li>

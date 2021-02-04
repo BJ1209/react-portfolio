@@ -1,6 +1,6 @@
-import React from "react";
-import { ArrowDropUp } from "@material-ui/icons";
-import "./Footer.css";
+import React from 'react';
+import { ArrowDropUp } from '@material-ui/icons';
+import './../styles/Footer.scss';
 
 function Footer({ data }) {
   return (
@@ -20,18 +20,13 @@ function Footer({ data }) {
         })}
       </div>
       <div className="footer__creds">
-        <p>
-          Created with <span> ❤️ </span>
-        </p>
+        <p>Created with ReactJs</p>
         <span>
-          Photo by{" "}
+          Photo by{' '}
           <a href="https://unsplash.com/@nathananderson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
             Nathan Anderson
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com/@nathananderson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-            Unsplash
-          </a>
+          </a>{' '}
+          on <a href="https://unsplash.com/">Unsplash</a>
         </span>
       </div>
     </section>

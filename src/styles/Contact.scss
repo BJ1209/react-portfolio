@@ -1,0 +1,92 @@
+@import "./base";
+.contact {
+  background-color: $clr-contact-bg;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  @include mq($bp-992, $bp-1200) {
+    padding: $padding-992-1200;
+  }
+  @include mq($bp-768, $bp-992) {
+    padding: $padding-768-992;
+  }
+  @include mq($bp-600, $bp-768) {
+    padding: $padding-600-768;
+  }
+  @include mq($bp-0, $bp-600) {
+    padding: $padding-0-600;
+  }
+  & > h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: $clr-contact-blue;
+    margin-bottom: 0.5em;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    & > div:first-of-type {
+      display: flex;
+    }
+    & > div > input,
+    & > div:first-of-type > input,
+    & > textarea {
+      flex: 1;
+      padding: 1em;
+      font-size: 1.05rem;
+      outline: none;
+      background-color: #2b2b2b;
+      color: #6c6c6c;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 2px solid;
+      border-color: $clr-form-border;
+      margin-bottom: 0.7em;
+    }
+    & > div:first-of-type > input:last-of-type {
+      margin-left: 0.7em;
+    }
+    & > div:nth-of-type(2) {
+      display: flex;
+    }
+    & div input:focus {
+      border-color: $clr-contact-blue;
+    }
+    & textarea:focus {
+      border-bottom: 2px solid $clr-contact-blue;
+    }
+    & > textarea {
+      font-size: 1.1rem;
+      margin-bottom: 0.5em;
+    }
+    & > textarea::placeholder {
+      font-size: 1.15rem;
+    }
+    & > button {
+      margin-top: 1.2em;
+      align-self: flex-end;
+      background-color: inherit;
+      border: 0;
+      font-size: 1rem;
+      border-radius: 4px;
+      padding: 0.7em 1.5em;
+      border: 2px solid $clr-contact-blue;
+      color: $clr-contact-blue;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.15s ease-in-out;
+    }
+    & > button:hover,
+    & > button:focus {
+      color: #111;
+      outline: 0;
+      background-color: $clr-contact-blue;
+    }
+    & > button:active {
+      transform: scale(0.95);
+    }
+  }
+}

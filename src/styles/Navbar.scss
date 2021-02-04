@@ -24,12 +24,12 @@ svg.nav__hamburgerIcon {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-.nav__logo > a {
-  font-size: 5.5rem;
-  text-decoration: none;
-  color: #fafafa;
-  font-family: "Euphoria Script", cursive;
+  & > a {
+    font-size: 5.5rem;
+    text-decoration: none;
+    color: #fafafa;
+    font-family: "Euphoria Script", cursive;
+  }
 }
 .nav__links {
   width: 15em;

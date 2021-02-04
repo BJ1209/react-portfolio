@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './../styles/Home.scss';
 import Fade from 'react-reveal/Fade';
 import { ArrowDropDownCircle } from '@material-ui/icons';
 function header({ data }) {
