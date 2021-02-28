@@ -3,13 +3,6 @@ import * as DevIcons from 'react-icons/di';
 import * as FAIcons from 'react-icons/fa';
 import { SiFirebase } from 'react-icons/si';
 
-import Amazon from './images/projects/Amazon.jpg';
-import Spotify from './images/projects/Spotify-Clone.gif';
-import COVID19Tracker from './images/projects/Covid-19-tracker.png';
-import Whatsapp from './images/projects/whatsapp__home.jpg';
-import Telegram from './images/projects/Home.jpg';
-import profilepic from './images/profilePic.jpg';
-
 const resumeData = {
   main: {
     name: 'Bikram Jeet Singh',
@@ -18,7 +11,6 @@ const resumeData = {
     bio: "My Name is Bikram. I'm a Front-End ReactJS Developer.",
     contactmessage: 'Get in contact with me to receive further details',
     email: 'sbikram99975@gmail.com',
-    imageURL: profilepic,
     phone: '+91-7017432800',
     address: {
       street: 'Premnagar',
@@ -105,30 +97,35 @@ const resumeData = {
     projects: [
       {
         title: 'Amazon Clone - ReactJs, Hooks, Firebase',
-        imageUrl: Amazon,
+        imageUrl:
+          'https://github.com/BJ1209/react-portfolio/blob/main/src/images/projects/Amazon.jpg?raw=true',
         link: 'https://clone-bjs-b7e81.web.app/',
         repo: 'https://github.com/BJ1209/Amazon-Web-Clone',
       },
       {
         title: 'Spotify Web Clone - ReactJs, Hooks, Spotify-Web-API',
-        imageUrl: Spotify,
+        imageUrl:
+          'https://github.com/BJ1209/react-portfolio/blob/main/src/images/projects/Spotify-Clone.gif?raw=true',
         repo: 'https://github.com/BJ1209/Spotify-Clone-react',
         link: 'https://spotify-clone-bjs.web.app/',
       },
       {
         title: 'COVID-19 Tracker - ReactJs, Hooks, API',
-        imageUrl: COVID19Tracker,
+        imageUrl:
+          'https://github.com/BJ1209/react-portfolio/blob/main/src/images/projects/Covid-19-tracker.png?raw=true',
         link: 'https://covid-19-tracker-b.web.app/',
       },
       {
         title: 'Telegram Clone - ReactJs, Hooks, real-time-messaging',
-        imageUrl: Telegram,
+        imageUrl:
+          'https://github.com/BJ1209/react-portfolio/blob/main/src/images/projects/Home.jpg?raw=true',
         link: 'https://telegram-clone-bjs.web.app/',
         repo: 'https://github.com/BJ1209/Telegram-clone',
       },
       {
         title: "Whatsapp Clone - ReactJs, Hooks,real-time-messaging, Emoji's and much more",
-        imageUrl: Whatsapp,
+        imageUrl:
+          'https://github.com/BJ1209/react-portfolio/blob/main/src/images/projects/whatsapp__home.jpg?raw=true',
         link: 'https://whatsapp-web-clone-bjs.web.app/',
         repo: 'https://github.com/BJ1209/WhatsApp-Web-Clone',
       },

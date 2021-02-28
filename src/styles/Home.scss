@@ -2,7 +2,7 @@
 .home {
   height: 100vh;
   width: 100%;
-  background-image: url("../images/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+  background-image: url(https://github.com/BJ1209/react-portfolio/blob/main/src/images/safar-safarov-LKsHwgzyk7c-unsplash.jpg?raw=true);
   background-size: cover;
   background-position: 0% 40%;
   display: flex;
@@ -29,7 +29,7 @@
     background-position: 45% 40%;
   }
   @include mq($bp-0, $bp-600) {
-    background-image: url(../images/ben-kolde-lqZPleZ4ERA-unsplash.jpg);
+    background-image: url(https://raw.githubusercontent.com/BJ1209/react-portfolio/main/src/images/ben-kolde-lqZPleZ4ERA-unsplash.jpg);
     background-position: 50%;
   }
   .home__banner {

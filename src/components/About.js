@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './../styles/About.scss';
 
 function About({ data }) {
   const main = data?.main;
+  const [githubData, setGithubData] = useState({});
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch('https://api.github.com/users/BJ1209');
+      const res = await data.json();
+      setGithubData(res);
+    };
+    fetchData();
+  }, []);
+  console.log(githubData);
   return (
     <section className="about" id="about">
       <div className="about__image">
-        <img src={main.imageURL} alt={main.name} />
+        <img src={githubData?.avatar_url} alt={main.name} />
       </div>
       <div className="about__info">
         <div className="about__infotop">
