@@ -11,7 +11,11 @@ function Projects({ data }) {
           <Project key={index} project={project} />
         ))}
       </div>
-      <a href="https://github.com/BJ1209?tab=repositories" target="_blank">
+      <a
+        href="https://github.com/BJ1209?tab=repositories"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         Check All Repositories
       </a>
     </section>

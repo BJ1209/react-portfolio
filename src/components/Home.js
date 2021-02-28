@@ -4,11 +4,14 @@ import Fade from 'react-reveal/Fade';
 import { ArrowDropDownCircle } from '@material-ui/icons';
 function header({ data }) {
   const main = data?.main;
+
+  console.log(main?.name?.split(''));
+
   return (
     <div className="home" id="home">
       <Fade top>
         <div className="home__banner">
-          <h1>I'm {main.name}</h1>
+          <h1>I'm {main?.name}</h1>
           <h3>
             I'm an {main.address.country} based <span>{main.occupation}</span>.
           </h3>

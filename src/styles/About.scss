@@ -25,12 +25,10 @@
       object-fit: contain;
       height: 9em;
       border-radius: 50%;
-      @include mq($bp-600, $bp-768) {
+      @include mq($bp-0, $bp-768) {
         height: 10em;
       }
-      @include mq($bp-0, $bp-600) {
-        height: 10em;
-      }
+      
     }
   }
 

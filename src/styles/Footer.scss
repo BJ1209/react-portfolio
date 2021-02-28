@@ -28,6 +28,9 @@
     background-color: $clr-skill;
     border-radius: 50%;
     transition: all 0.3s;
+    @include mq($bp-0, $bp-425) {
+      top: -10px;
+    }
     & a {
       text-decoration: none;
       & > svg {

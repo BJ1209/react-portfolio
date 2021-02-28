@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
+@import "./base";
 .nav {
   display: flex;
   flex-direction: column;
@@ -16,6 +17,9 @@
 svg.nav__hamburgerIcon {
   color: #fafafa !important;
   font-size: 2.2rem !important;
+  @include mq($bp-0, $bp-425) {
+    font-size: 3.5rem !important;
+  }
 }
 .nav__logo {
   flex: 0.2;
@@ -29,6 +33,9 @@ svg.nav__hamburgerIcon {
     text-decoration: none;
     color: #fafafa;
     font-family: "Euphoria Script", cursive;
+    @include mq($bp-0, $bp-425) {
+      font-size: 8rem;
+    }
   }
 }
 .nav__links {
@@ -39,6 +46,9 @@ svg.nav__hamburgerIcon {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  @include mq($bp-0, $bp-425) {
+    width: 18em;
+  }
 }
 .nav__lista {
   display: flex;
@@ -56,6 +66,9 @@ svg.nav__hamburgerIcon {
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  @include mq($bp-0, $bp-425) {
+    font-size: 1.6rem;
+  }
 }
 .nav__links a:hover {
   opacity: 1;
@@ -71,10 +84,16 @@ svg.nav__hamburgerIcon {
 }
 .nav__social > li {
   margin: 0.4em 0;
+  @include mq($bp-0, $bp-425) {
+    margin: 0.8em;
+  }
 }
 .nav__social a svg {
   opacity: 0.8;
   transition: 0.25s all ease-in-out;
+  @include mq($bp-0, $bp-425) {
+    font-size: 2.2rem;
+  }
 }
 .nav__social a:hover svg {
   opacity: 1;

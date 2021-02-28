@@ -10,12 +10,12 @@ const Project = ({ project }) => {
         <h3 className="project__title">{title}</h3>
         <div className="project__links">
           {repo && (
-            <a href={repo} target="_blank">
+            <a href={repo} rel="noopener noreferrer" target="_blank">
               <GitHub />
               <span>github</span>
             </a>
           )}
-          <a href={link} target="_blank">
+          <a href={link} rel="noopener noreferrer" target="_blank">
             <Link />
             <span>link</span>
           </a>

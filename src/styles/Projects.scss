@@ -25,6 +25,9 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     text-align: center;
+    @include mq($bp-0, $bp-425) {
+      font-size: 2rem;
+    }
   }
   .projects__work {
     display: flex;
